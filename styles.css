@@ -1,0 +1,40 @@
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+h1{
+    font-size: 4rem;
+    color: maroon;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p{
+    font-size: 2rem;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.pano{
+    width: 100%;
+    height: 100vh;
+}
+
+.custom-buttons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+  }
+  
+  .custom-buttons button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
