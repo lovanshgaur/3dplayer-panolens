@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const videoPanorama = new PANOLENS.VideoPanorama('test.mp4', {
         autoplay: true,
         muted: false,
+        playsInline : true
     });
 
     const viewer = new PANOLENS.Viewer({
@@ -15,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     viewer.add(videoPanorama);
 
-    videoPanorama.video.playsInline = true;
 
     viewer.addEventListener('stereo-mode', (event) => {
         if (event.stereo) {
