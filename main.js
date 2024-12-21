@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const panoContainer = document.querySelector(".pano");
 
     const videoPanorama = new PANOLENS.VideoPanorama('test.mp4', {
-        autoplay: false,
+        autoplay: true,
         muted: false,
     });
 
