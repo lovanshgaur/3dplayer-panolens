@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const videoPanorama = new PANOLENS.VideoPanorama('test.mp4', {
         autoplay: true,
-        muted: false,
+        muted: true,
         playsInline : true
     });
 
@@ -15,7 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     viewer.add(videoPanorama);
+    const vrButton = document.getElementById('vrButton');
 
+    vrButton.addEventListener('click', function() {
+        viewer.enterVR();      });
+    
 
     viewer.addEventListener('stereo-mode', (event) => {
         if (event.stereo) {
